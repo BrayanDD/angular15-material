@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {PagesModule}from '../app/pages/pages.module';
 import {UserModule} from '../app/user/user.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import {UserModule} from '../app/user/user.module';
     NgbModule,
     PagesModule,
     UserModule,
-
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
