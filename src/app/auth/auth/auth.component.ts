@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-
+import { Component  } from '@angular/core';
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
@@ -7,4 +7,9 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class AuthComponent {
 
+  constructor(private router:Router){}
+
+  login(){
+    this.router.navigateByUrl('/dashboard');
+  }
 }
