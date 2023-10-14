@@ -8,11 +8,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {PagesModule}from '../app/pages/pages.module';
 import {UserModule} from '../app/user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { PageNotFoundComponent } from './pageNotFound/page-not-found.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
