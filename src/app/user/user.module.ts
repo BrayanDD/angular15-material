@@ -5,6 +5,14 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { UserCreateComponent } from './user-create/user-create.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserRoutingModule } from './user-routing.module';
+import {MatInputModule} from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
 
 
 
@@ -17,7 +25,12 @@ import { UserRoutingModule } from './user-routing.module';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    MatInputModule,
+    MatGridListModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatButtonModule,
   ]
 })
 export class UserModule { }
